@@ -51,5 +51,9 @@ class Helper
 
         return $raw_sql;
     }
+    
+    static public function sanitize($param){
+        return htmlspecialchars($param, ENT_QUOTES, 'UTF-8');
+    }
 
 }

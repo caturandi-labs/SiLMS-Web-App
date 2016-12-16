@@ -2,14 +2,8 @@
 
 class Controller
 {
-    /**
-     * @var null Database Connection
-     */
+    
     public $db = null;
-
-    /**
-     * @var null Model
-     */
     public $model = null;
 
     /**
@@ -21,24 +15,15 @@ class Controller
         $this->loadModel();
     }
 
-    /**
-     * Open the database connection with the credentials from application/config/config.php
-     */
+    
     private function openDatabaseConnection()
     {
-        // set the (optional) options of the PDO connection. in this case, we set the fetch mode to
-        // "objects", which means all results will be objects, like this: $result->user_name !
-        // For example, fetch mode FETCH_ASSOC would return results like this: $result["user_name] !
-        // @see http://www.php.net/manual/en/pdostatement.fetch.php
         $options = array(PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_OBJ, PDO::ATTR_ERRMODE => PDO::ERRMODE_WARNING);
-
-        // generate a database connection, using the PDO connector
-        // @see http://net.tutsplus.com/tutorials/php/why-you-should-be-using-phps-pdo-for-database-access/
         $this->db = new PDO(DB_TYPE . ':host=' . DB_HOST . ';dbname=' . DB_NAME . ';charset=' . DB_CHARSET, DB_USER, DB_PASS, $options);
     }
 
     /**
-     * Loads the "model".
+     * Keterangan : Setelah buat model, langsung daftarin disini
      * @return object model
      */
     public function loadModel()
@@ -46,9 +31,16 @@ class Controller
         require APP . 'model/model.php';
         require APP . 'model/Mahasiswamodel.php';
         require APP . 'model/Ruangmodel.php';
+        require APP . 'model/Levelmodel.php';
+        require APP . 'model/Usermodel.php';
+        require APP . 'model/Loginmodel.php';
         // create new "model" (and pass the database connection)
+
         $this->model = new Model($this->db);
         $this->mahasiswamodel = new Mahasiswamodel($this->db);
         $this->ruangmodel = new Ruangmodel($this->db);
+        $this->levelmodel = new Levelmodel($this->db);
+        $this->usermodel = new Usermodel($this->db);
+        $this->loginmodel = new Loginmodel($this->db);
     }
 }

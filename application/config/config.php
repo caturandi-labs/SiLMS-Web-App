@@ -1,4 +1,8 @@
 <?php
+/**
+*	
+*	@author andi
+*/
 
 define('ENVIRONMENT', 'development');
 
@@ -14,12 +18,12 @@ define('URL_SUB_FOLDER', str_replace(URL_PUBLIC_FOLDER, '', dirname($_SERVER['SC
 define('URL', URL_PROTOCOL . URL_DOMAIN . URL_SUB_FOLDER);
 
 /**
- * Configuration for: Database
- * This is the place where you define your database credentials, database type etc.
+ * Konstanta ini digunakan untuk memanajamen akses database
+ * 
  */
 define('DB_TYPE', 'mysql');
 define('DB_HOST', '127.0.0.1');
-define('DB_NAME', 'mini');
+define('DB_NAME', 'db_lms');
 define('DB_USER', 'root');
 define('DB_PASS', 'root');
 define('DB_CHARSET', 'utf8');
