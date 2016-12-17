@@ -8,13 +8,9 @@
 
 		public function masuk(){
 
-			if(isset($_POST['username']) && isset($_POST['password']) && isset($_POST['id_level'])){
-				$username = $_POST['username'];
-				$password = $_POST['password'];
-				$id_level = $_POST['id_level'];
-			}else{
-				echo "<script>alert('Maaf Data Belum Terisi Lengkap!');</script>";
-			}
+			$username = $_POST['username'];
+			$password = $_POST['password'];
+			$id_level = $_POST['id_level'];
 
 			$row = $this->loginmodel->authenticate($username,$password,$id_level);
 			
@@ -31,14 +27,16 @@
 		    		header('Location:' . URL . 'home');
 				}
 			}else{
-				echo "Maaf Username Dan Password Yang Anda Masukkan Salah!";
+				echo "Login Gagal";
 			}
 		}
 
+
 		public function logout(){
-			session_destroy();
+			session_start();
 			unset($_SESSION['username']);
 			unset($_SESSION['id_level']);
+			session_destroy();
 			header('Location:' . URL . 'login');
 		}
 	}

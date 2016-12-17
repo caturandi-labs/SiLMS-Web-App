@@ -1,4 +1,3 @@
-<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,8 +6,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Aplikasi LMS">
+    <meta name="author" content="Catur Andi Pamungkas, Dwi Cahyo Mulyo N, Nina Rahmayanti, Afrida">
 
     <title>Sistem Informasi LMS</title>
 
@@ -56,7 +55,7 @@
                         <li><a href="#"><i class="fa fa-user fa-fw"></i> Profile</a>
                         </li>
                         <li class="divider"></li>
-                        <li><a href="login/logout"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                        <li><a href="<?php echo URL; ?>login/logout"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
                         </li>
                     </ul>
                     <!-- /.dropdown-user -->
@@ -68,71 +67,43 @@
             <div class="navbar-default sidebar" role="navigation">
                 <div class="sidebar-nav navbar-collapse">
                     <ul class="nav" id="side-menu">
-                        <li class="sidebar-search">
-                            <div class="input-group custom-search-form">
-                                <input type="text" class="form-control" placeholder="Search...">
-                                <span class="input-group-btn">
-                                <button class="btn btn-default" type="button">
-                                    <i class="fa fa-search"></i>
-                                </button>
-                            </span>
-                            </div>
-                            <!-- /input-group -->
-                        </li>
+                        <div style=" padding :30px;">
+                            <img src="<?php echo URL; ?>img/logos.png" style="width:200px;" class="img-responsive img-rounded">
+                        </div>  
                         <li>
                             <a href="<?php echo URL; ?>home/index"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
                         </li>
                         
                         <li>
-                            <a href="#"><i class="fa fa-gear fa-fw"></i> Akademik<span class="fa arrow"></span></a>
+                            <a href="#"><i class="fa fa-graduation-cap fa-fw"></i> Akademik<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="#?>""><i class="fa fa-building fa-fw"></i> Tahun Ajaran</a>
+                                    <a href="#?>""><i class="fa fa-newspaper-o fa-fw"></i> Manajemen Nilai Mahasiswa</a>
                                 </li>
                                 <li>
-                                    <a href="#?>""><i class="fa fa-building fa-fw"></i> Data Kelas</a>
-                                </li>
-                                <li>
-                                    <a href="#?>""><i class="fa fa-building fa-fw"></i> Jadwal Perkuliahan</a>
-                                </li>
-                                <li>
-                                    <a href="#?>""><i class="fa fa-building fa-fw"></i> Nilai Siswa</a>
-                                </li>
-                                <li>
-                                    <a href="#?>""><i class="fa fa-building fa-fw"></i> Absensi</a>
+                                    <a href="#?>""><i class="fa fa-calendar fa-fw"></i> Lihat Jadwal Perkuliahan</a>
                                 </li>
                             </ul>
                             <!-- /.nav-second-level -->
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-home fa-fw"></i> Data Master<span class="fa arrow"></span></a>
+                            <a href="#"><i class="fa fa-home fa-fw"></i> Data Lain<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="#"><i class="fa fa-users fa-fw"></i> Mahasiswa</a>
+                                    <a href="#"><i class="fa fa-users fa-fw"></i> Data Mahasiswa</a>
                                 </li>
                                 <li>
-                                    <a href="#"><i class="glyphicon glyphicon-circle-arrow-down fa-fw"></i> Dosen</a>
+                                    <a href="#"><i class="fa fa-user fa-fw"></i> Data Dosen</a>
                                 </li>
-                                <li>
-                                    <a href="#"><i class="glyphicon glyphicon-circle-arrow-up fa-fw"></i>Mata Kuliah</a>
-                                </li>
-                                <li>
-                                    <a href="#"><i class="fa fa-cubes fa-fw"></i> Semester</a>
-                                </li>
-                                <li>
-                                    <a href="#"><i class="fa fa-check-square-o fa-fw"></i> Ruang</a>
-                                </li>
-                                
                             </ul>
                             <!-- /.nav-second-level -->
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-file-text fa-fw"></i> Personalia<span class="fa arrow"></span></a>
+                            <a href="#"><i class="fa fa-file-text fa-fw"></i> Personalisasi<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="#"><i class="fa fa-users fa-fw"></i> Pengguna Aplikasi</a>
+                                    <a href="#"><i class="fa fa-user-plus fa-fw"></i> Profil Pengguna</a>
                                 </li>
-                                
                             </ul>
                             <!-- /.nav-second-level -->
                         </li>

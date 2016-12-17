@@ -23,16 +23,16 @@
 							<tbody>
 								<?php foreach($listMahasiswa as $mahasiswa): ?>
 								<tr>
-									<td><?php echo $mahasiswa->nim; ?></td>
-									<td><?php echo $mahasiswa->nama; ?></td>
-									<td><?php echo $mahasiswa->alamat; ?></td>
-									<td><?php echo $mahasiswa->kota; ?></td>
-									<td><?php echo $mahasiswa->kodepos; ?></td>
-									<td><?php echo $mahasiswa->tempat_lahir; ?></td>
-									<td><?php echo $mahasiswa->tanggal_lahir; ?></td>
-									<td><?php echo ucfirst($mahasiswa->agama); ?></td>
-									<td><?php echo $mahasiswa->jenis_kelamin; ?></td>
-									<td><?php echo $mahasiswa->kode_prodi; ?></td>
+									<td><?php echo sanitize($mahasiswa->nim); ?></td>
+									<td><?php echo sanitize($mahasiswa->nama_lengkap); ?></td>
+									<td><?php echo sanitize($mahasiswa->alamat_jalan); ?></td>
+									<td><?php echo sanitize($mahasiswa->kota); ?></td>
+									<td><?php echo sanitize($mahasiswa->kodepos); ?></td>
+									<td><?php echo sanitize($mahasiswa->tempat_lahir); ?></td>
+									<td><?php echo sanitize($mahasiswa->tanggal_lahir); ?></td>
+									<td><?php echo sanitize(ucfirst($mahasiswa->agama)); ?></td>
+									<td><?php echo sanitize($mahasiswa->jenis_kelamin); ?></td>
+									<td><?php echo sanitize($mahasiswa->kode_prodi); ?></td>
 								</tr>
 								<?php endforeach; ?>
 							</tbody>

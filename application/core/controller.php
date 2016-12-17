@@ -6,9 +6,6 @@ class Controller
     public $db = null;
     public $model = null;
 
-    /**
-     * Whenever controller is created, open a database connection too and load "the model".
-     */
     function __construct()
     {
         $this->openDatabaseConnection();

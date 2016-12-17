@@ -20,6 +20,7 @@ require APP . 'config/config.php';
 
 //gunakan helpers 
 require APP . 'libs/helper.php';
+require APP . 'libs/libs.php';
 
 // kelas inti nya ::::
 require APP . 'core/application.php';
