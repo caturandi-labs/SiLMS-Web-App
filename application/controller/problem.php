@@ -1,11 +1,15 @@
 <?php
+	/**
+	* @author andi
+	*
+	*/
 
-class Problem extends Controller{
+	class Problem extends Controller{
 
-    public function index()
-    {
-    	session_start();
-        require APP . 'view/problem/index.php';
-    }
+	    public function index()
+	    {
+	    	session_start();
+	        require APP . 'view/problem/index.php';
+	    }
 
-}
+	}

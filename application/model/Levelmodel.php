@@ -1,5 +1,8 @@
 <?php 
-	
+	/**
+	*@author cahyo
+	*
+	*/	
 	class Levelmodel extends Model{
 
 		public function selectLevel(){
@@ -15,6 +18,7 @@
 			$parameters = array(':level'=>$level);
 			$query->execute($parameters);
 		}
+		
 	}
 
 ?>

@@ -1,6 +1,11 @@
 <?php 
 
+	/**
+	*@author andi
+	*
+	*/
 	class Level extends Controller{
+
 		public function index(){
 			session_start();
 			$listLevel = $this->levelmodel->selectLevel();
@@ -16,6 +21,5 @@
 			}
 			header('Location:'.URL.'level/index');
 		}
-	}
 
-?>
+	}

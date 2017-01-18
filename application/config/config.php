@@ -1,7 +1,8 @@
 <?php
+
 /**
 *	
-*	@author andi
+* @author andi
 */
 
 define('ENVIRONMENT', 'development');
@@ -18,9 +19,10 @@ define('URL_SUB_FOLDER', str_replace(URL_PUBLIC_FOLDER, '', dirname($_SERVER['SC
 define('URL', URL_PROTOCOL . URL_DOMAIN . URL_SUB_FOLDER);
 
 /**
- * Konstanta ini digunakan untuk memanajamen akses database
- * 
- */
+* --------------------------------------------
+* Database Credentials -  Pengaturan Database
+* --------------------------------------------
+*/
 define('DB_TYPE', 'mysql');
 define('DB_HOST', '127.0.0.1');
 define('DB_NAME', 'db_lms');

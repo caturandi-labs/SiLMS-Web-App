@@ -1,4 +1,9 @@
 <?php 
+	
+	/**
+	* @author Catur Andi Pamungkas
+	*
+	*/
 
 	class Login extends Controller{
 
@@ -16,18 +21,23 @@
 			
 			if(count($row) == 1){
 				if(session_status() == PHP_SESSION_NONE){
+					
 					session_start();
+
 					foreach($row as $data){
 						$username = $data->username;
 						$id_level = $data->id_level;
 					}
+					
 					$_SESSION['username'] = $username;
 					$_SESSION['id_level'] = $id_level;
 
 		    		header('Location:' . URL . 'home');
 				}
 			}else{
-				echo "Login Gagal";
+				# Call The Login Page and Show The Error And then ===> SHUT UP YOUR MOUTH !
+				$error = 'Login Gagal, Periksa Kembali Username , Password, dan Hak Akses !';
+				require_once APP . 'view/login_view.php';
 			}
 		}
 

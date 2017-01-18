@@ -6,25 +6,25 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Aplikasi LMS">
-    <meta name="author" content="Catur Andi Pamungkas, Dwi Cahyo Mulyo N, Nina Rahmayanti, Afrida">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
     <title>Sistem Informasi LMS</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="<?php echo URL;?>css/bootstrap.css" rel="stylesheet">
-
+    <link href="<?php echo URL;?>css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="<?php echo URL;?>css/formValidation.min.css">
     <!-- MetisMenu CSS -->
     <link href="<?php echo URL; ?>css/metisMenu.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link href="<?php echo URL;?>css/sb-admin-2.css" rel="stylesheet">
-
     <!-- Morris Charts CSS -->
     <!-- <link href="../vendor/morrisjs/morris.css" rel="stylesheet"> -->
-
+    
     <!-- Custom Fonts -->
     <link href="<?php echo URL;?>css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="<?php echo URL; ?>css/style.css">
 
 </head>
 

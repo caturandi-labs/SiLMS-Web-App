@@ -1,0 +1,30 @@
+/* 
+*
+* @author Catur Andi Pamungkas
+*
+* */
+
+.edit-form{
+	margin-top: 30px;
+}
+/*
+#page-wrapper{
+	min-width: 1024p
+}*/
+
+.main-content{
+	margin-top:20px;
+}
+
+table{
+	font-size : 14px;
+	text-align: center;
+}
+
+th{
+	text-align: center;
+}
+
+.button-cari-margin{
+	margin-top: 25px;
+}

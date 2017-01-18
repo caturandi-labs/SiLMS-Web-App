@@ -75,40 +75,40 @@
                         </li>
                         
                         <li>
-                            <a href="#"><i class="fa fa-gear fa-fw"></i> Akademik<span class="fa arrow"></span></a>
+                            <a href="#"><i class="fa fa-graduation-cap fa-fw"></i> Akademik<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="#?>""><i class="fa fa-building fa-fw"></i> Lihat Absensi</a>
+                                    <a href="#?>""><i class="fa fa-bar-chart fa-fw"></i> Lihat Absensi</a>
                                 </li>
                                 <li>
-                                    <a href="#?>""><i class="fa fa-building fa-fw"></i> Lihat Jadwal</a>
+                                    <a href="#?>""><i class="fa fa-calendar fa-fw"></i> Lihat Jadwal</a>
                                 </li>
                                 <li>
-                                    <a href="#?>""><i class="fa fa-building fa-fw"></i> Lihat KHS</a>
+                                    <a href="#?>""><i class="fa fa-suitcase  fa-fw"></i> Lihat KHS</a>
                                 </li>
                                 <li>
-                                    <a href="#?>""><i class="fa fa-building fa-fw"></i> Input KRS </a>
+                                    <a href="#?>""><i class="fa fa-check-square fa-fw"></i> Input KRS </a>
                                 </li>
                             </ul>
                             <!-- /.nav-second-level -->
                         </li>
-                        <li>
+                        <!-- <li>
                             <a href="#"><i class="fa fa-home fa-fw"></i> Data Lain<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
                                     <a href="#"><i class="fa fa-users fa-fw"></i> Data Mahasiswa</a>
                                 </li>
                                 <li>
-                                    <a href="#"><i class="glyphicon glyphicon-circle-arrow-down fa-fw"></i> Data Dosen</a>
+                                    <a href="#"><i class="fa fa-user fa-fw"></i> Data Dosen</a>
                                 </li>
                             </ul>
-                            <!-- /.nav-second-level -->
-                        </li>
+ -->                            <!-- /.nav-second-level -->
+                        <!-- </li> -->
                         <li>
                             <a href="#"><i class="fa fa-file-text fa-fw"></i> Personalisasi<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="#"><i class="fa fa-users fa-fw"></i> Profil Pengguna</a>
+                                    <a href="<?php echo URL; ?>mahasiswa/showmahasiswadetail"><i class="fa fa-user-plus fa-fw"></i> Profil Pengguna</a>
                                 </li>
                             </ul>
                             <!-- /.nav-second-level -->

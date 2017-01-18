@@ -3,8 +3,8 @@
 class Controller
 {
     
-    public $db = null;
-    public $model = null;
+    protected $db = null;
+    protected $model = null;
 
     function __construct()
     {
@@ -22,7 +22,7 @@ class Controller
     /**
      * Keterangan : Setelah buat model, langsung daftarin disini
      * @return object model
-     */
+    */
     public function loadModel()
     {
         require APP . 'model/model.php';
@@ -31,7 +31,16 @@ class Controller
         require APP . 'model/Levelmodel.php';
         require APP . 'model/Usermodel.php';
         require APP . 'model/Loginmodel.php';
-        // create new "model" (and pass the database connection)
+        require APP . 'model/Jurusanmodel.php';
+        require APP . 'model/Semestermodel.php';
+        require APP . 'model/Dosenmodel.php';
+        require APP . 'model/Matakuliahmodel.php';
+        require APP . 'model/Tahunajaranmodel.php';
+        require APP . 'model/Kelasmodel.php';
+        require APP . 'model/Jadwalmodel.php';
+        require APP . 'model/MataKuliahJurusanmodel.php';
+        require APP . 'model/Absenmodel.php';
+        require APP . 'model/Krsmodel.php';
 
         $this->model = new Model($this->db);
         $this->mahasiswamodel = new Mahasiswamodel($this->db);
@@ -39,5 +48,15 @@ class Controller
         $this->levelmodel = new Levelmodel($this->db);
         $this->usermodel = new Usermodel($this->db);
         $this->loginmodel = new Loginmodel($this->db);
+        $this->jurusanmodel = new Jurusanmodel($this->db);
+        $this->semestermodel = new Semestermodel($this->db);
+        $this->dosenmodel = new Dosenmodel($this->db);
+        $this->matakuliahmodel = new Matakuliahmodel($this->db);
+        $this->tahunajaranmodel = new Tahunajaranmodel($this->db);
+        $this->kelasmodel = new Kelasmodel($this->db);
+        $this->jadwalmodel = new Jadwalmodel($this->db);
+        $this->matakuliahjurusanmodel = new MataKuliahJurusanmodel($this->db);
+        $this->absenmodel = new Absenmodel($this->db);
+        $this->krsmodel = new Krsmodel($this->db);
     }
 }

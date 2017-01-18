@@ -11,16 +11,9 @@
 
     <!-- Bootstrap Core CSS -->
     <link href="<?php echo URL;?>css/bootstrap.css" rel="stylesheet">
-
-    <!-- MetisMenu CSS -->
-    <link href="<?php echo URL; ?>css/metisMenu.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="<?php echo URL;?>css/sb-admin-2.css" rel="stylesheet">
-
-    <!-- Morris Charts CSS -->
-    <!-- <link href="../vendor/morrisjs/morris.css" rel="stylesheet"> -->
-
+	
+	<link rel="stylesheet" href="<?php echo URL; ?>css/bootstrap-material-design.css">
+	<link rel="stylesheet" href="<?php echo URL; ?>css/ripples.css">
     <!-- Custom Fonts -->
     <link href="<?php echo URL;?>css/font-awesome.min.css" rel="stylesheet" type="text/css">
 	<style>
@@ -31,27 +24,30 @@
 </head>
 
 <body>
-	<div class="container" style="margin-top: 80px;">
+	<div class="container-raised" style="margin-top: 80px;">
 		<div class="row">
-			<div class="col-md-4 col-md-offset-4">
-				<div class="panel panel-primary">
+			<div class="col-md-4 col-md-offset-4 col-sm-4 col-sm-offset-4 ">
+				<div class="panel panel-info">
 					<div class="panel-heading">
 						<h4 class="text-center">Form Login</h4>
 					</div>
 					<div class="panel-body">
 						<div class="form-group">
-							<form action="<?php echo URL; ?>login/masuk" method="POST">
-								<div>
+							<form id="formLogin" action="<?php echo URL; ?>login/masuk" method="POST">
+								<!-- <div>
 									<label class="control-label" for="username">Username</label>
-								</div>
+								</div> -->
+								<?php if(isset($error)): ?>
+									<div class="alert alert-warning"><?php echo $error ?></div>
+								<?php endif; ?>
 								<div class="input-group">
 									<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
 									<input class="form-control" type="text" name="username" placeholder="Username" required>
 								</div>
 								<br>
-								<div>
+								<!-- <div>
 									<label class="control-label" for="password">Password</label>
-								</div>
+								</div> -->
 								<div class="input-group">
 									<span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
 									<input class="form-control" type="password" name="password" placeholder="Password" required>
@@ -65,7 +61,7 @@
 										<option value="3">Dosen</option>
 									</select>
 								</div>
-								<input type="submit" name="btn_login" value="Login" class="btn btn-primary">
+								<input type="submit" name="btn_login" value="Login" class="btn btn-info btn-raised btn-block">
 							</form>
 						</div>
 					</div>
@@ -75,17 +71,11 @@
 	</div>
 
     <script src="<?php echo URL; ?>js/jquery.js"></script>
+    <script src="<?php echo URL ?>js/bootstrap.js"></script>
     <!-- Bootstrap Core JavaScript -->
     <script src="<?php echo URL;?>js/bootstrap.min.js"></script>
-
-    <!-- Metis Menu Plugin JavaScript -->
-    <script src="<?php echo URL;?>js/metisMenu.min.js"></script>
-
-    <!-- Custom Theme JavaScript -->
-    <script src="<?php echo URL;?>js/sb-admin-2.js"></script>
-
-
-
+	<script src="<?php echo URL; ?>js/material.js"></script>
+	<script src="<?php echo URL; ?>js/ripples.js"></script>
 </body>
 
 </html>

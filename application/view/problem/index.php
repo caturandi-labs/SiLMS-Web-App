@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>404 Page Not Found</title>
-	<link rel="stylesheet" href="<?php echo URL;?>css/bootstrap.min.css">
+	<link rel="stylesheet" href="<?php echo URL;?>css/bootstrap.css">
 </head>
 <body>
 	<div style="margin-top: 40px;" class="row">

@@ -1,5 +1,8 @@
 <?php 
-	
+	/**
+	*@author cahyo
+	*
+	*/	
 	class Loginmodel extends Model{
 
 		public function authenticate($username,$password,$level){
@@ -9,7 +12,5 @@
 			$query->execute($params);
 			return $query->fetchAll();
 		}
-		
-
 	}
 

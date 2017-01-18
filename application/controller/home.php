@@ -22,16 +22,21 @@ class Home extends Controller{
     	
     	if($_SESSION['id_level'] == 1){
 
+    		# Level Super Admin (ROOT)
     		require APP . 'view/header_view.php';
 			require APP . 'view/home/index.php';
 			require APP . 'view/footer_view.php';
 
     	}else if($_SESSION['id_level'] == 2){
+    		
+    		# Level Mahasiswa
     		require APP . 'view/mahasiswa/header_view_mahasiswa.php';
 			require APP . 'view/mahasiswa/index.php';
 			require APP . 'view/footer_view.php';
     	
     	}else{
+    		
+    		# Level Dosen
     		require APP . 'view/dosen/header_dosen_view.php';
 			require APP . 'view/dosen/index.php';
 			require APP . 'view/footer_view.php';

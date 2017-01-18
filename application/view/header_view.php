@@ -11,20 +11,29 @@
     <title>Sistem Informasi LMS</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="<?php echo URL;?>css/bootstrap.css" rel="stylesheet">
-
+    <!-- <link rel="stylesheet" href="<?php echo URL; ?>css/bootstrap-material-design.css"> -->
+    <link href="<?php echo URL;?>css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="<?php echo URL;?>css/formValidation.min.css">
     <!-- MetisMenu CSS -->
     <link href="<?php echo URL; ?>css/metisMenu.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link href="<?php echo URL;?>css/sb-admin-2.css" rel="stylesheet">
-
     <!-- Morris Charts CSS -->
     <!-- <link href="../vendor/morrisjs/morris.css" rel="stylesheet"> -->
-
+    <link rel="stylesheet" href="<?php echo URL; ?>css/sweetalert.css">
+    <link rel="stylesheet" href="<?php echo URL; ?>css/datatables.bootstrap.css">
+    
     <!-- Custom Fonts -->
     <link href="<?php echo URL;?>css/font-awesome.min.css" rel="stylesheet" type="text/css">
-
+    <!-- <link rel="stylesheet" href="<?php echo URL; ?>css/datatables.bootstrap.css"> -->
+    <link rel="stylesheet" href="<?php echo URL; ?>css/style.css">
+    <link rel="stylesheet" href="<?php echo URL; ?>css/chosen.css">
+    <style>
+        .chosen-container, .chosen-container-single{
+            width: 300px;
+        }
+    </style>
 </head>
 
 <body>
@@ -70,26 +79,29 @@
                             <img src="<?php echo URL; ?>img/logos.png" style="width:200px;" class="img-responsive img-rounded">
                         </div>
                         <li>
-                            <a href="<?php echo URL; ?>home/index"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                            <a href="<?php echo URL; ?>"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
                         </li>
                         
                         <li>
                             <a href="#"><i class="glyphicon glyphicon-education"></i>  Akademik<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="#?>""><i class="glyphicon glyphicon-calendar fa-fw"></i> Tahun Ajaran</a>
+                                    <a href="<?php echo URL; ?>tahunajaran/"><i class="glyphicon glyphicon-calendar fa-fw"></i> Tahun Ajaran</a>
                                 </li>
                                 <li>
-                                    <a href="#?>""><i class="fa fa-building fa-fw"></i> Data Kelas</a>
+                                    <a href="<?php echo URL; ?>kelas/"><i class="fa fa-building fa-fw"></i> Data Kelas</a>
                                 </li>
                                 <li>
-                                    <a href="#?>""><i class="glyphicon glyphicon-th fa-fw"></i> Jadwal Perkuliahan</a>
+                                    <a href="<?php echo URL; ?>prodi/"><i class="fa fa-building fa-fw"></i> Data Prodi</a>
                                 </li>
                                 <li>
-                                    <a href="#?>""><i class="glyphicon glyphicon-bookmark fa-fw"></i> Nilai Siswa</a>
+                                    <a href="<?php echo URL; ?>jadwal/"><i class="glyphicon glyphicon-th fa-fw"></i> Jadwal Perkuliahan</a>
                                 </li>
                                 <li>
-                                    <a href="#?>""><i class="glyphicon glyphicon-th-list fa-fw"></i> Absensi</a>
+                                    <a href="#"><i class="glyphicon glyphicon-bookmark fa-fw"></i> Nilai Siswa</a>
+                                </li>
+                                <li>
+                                    <a href="<?php echo URL ?>absen/"><i class="glyphicon glyphicon-th-list fa-fw"></i> Absensi</a>
                                 </li>
                             </ul>
                             <!-- /.nav-second-level -->
@@ -101,16 +113,19 @@
                                     <a href="<?php echo URL; ?>mahasiswa/"><i class="fa fa-users fa-fw"></i> Mahasiswa</a>
                                 </li>
                                 <li>
-                                    <a href="#"><i class="glyphicon glyphicon-user fa-fw"></i> Dosen</a>
+                                    <a href="<?php echo URL; ?>dosen/"><i class="glyphicon glyphicon-user fa-fw"></i> Dosen</a>
                                 </li>
                                 <li>
-                                    <a href="#"><i class="glyphicon glyphicon glyphicon-list-alt fa-fw"></i>Mata Kuliah</a>
+                                    <a href="<?php echo URL; ?>matakuliah/"><i class="glyphicon glyphicon glyphicon-list-alt fa-fw"></i>Mata Kuliah</a>
                                 </li>
                                 <li>
-                                    <a href="#"><i class="fa fa-cubes fa-fw"></i> Semester</a>
+                                    <a href="<?php echo URL; ?>matakuliahjurusan/"><i class="glyphicon glyphicon glyphicon-list-alt fa-fw"></i>Mata Kuliah Jurusan</a>
                                 </li>
                                 <li>
-                                    <a href="#"><i class="fa fa-check-square-o fa-fw"></i> Ruang</a>
+                                    <a href="<?php echo URL; ?>semester/"><i class="fa fa-cubes fa-fw"></i> Semester</a>
+                                </li>
+                                <li>
+                                    <a href="<?php echo URL; ?>ruang/"><i class="fa fa-check-square-o fa-fw"></i> Ruang</a>
                                 </li>
                                 
                             </ul>
@@ -120,9 +135,11 @@
                             <a href="#"><i class="fa fa-file-text fa-fw"></i> Personalisasi<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="<?php echo URL; ?>user/showuser"><i class="fa fa-users fa-fw"></i> Pengguna Aplikasi</a>
+                                    <a href="<?php echo URL; ?>user/"><i class="fa fa-users fa-fw"></i> Pengguna Aplikasi</a>
                                 </li>
-                                
+                                <li>
+                                    <a href="<?php echo URL; ?>level/"><i class="fa fa-signal fa-fw"></i> Level User</a>
+                                </li> 
                             </ul>
                             <!-- /.nav-second-level -->
                         </li>
